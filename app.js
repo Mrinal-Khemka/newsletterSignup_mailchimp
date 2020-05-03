@@ -49,7 +49,7 @@ app.post("/",function(req,res)
       
     });
    });
-   // request.write(jsonData);
+    request.write(jsonData);
     request.end();
 //     res.write("your Name: "+firstName+" "+lastName+"\n");
 //     res.write("your emailId: "+emailId);
