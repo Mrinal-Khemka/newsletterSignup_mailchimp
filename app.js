@@ -30,7 +30,7 @@ app.post("/",function(req,res)
     const url="https://us8.api.mailchimp.com/3.0/lists/ebaecd5f86";
     const options={
        method:"post",
-       auth:"Mrinal1:d292c9b8fe250bba1b690ca0c794be25-us8"
+       auth:"Mrinal1:(API_KEY)"
     }
     const request=https.request(url,options,function(response)
     {
@@ -66,8 +66,6 @@ app.listen(process.env.PORT||3000,function()
 });
 
 
-//apikey
-//d292c9b8fe250bba1b690ca0c794be25-us8
-//id:ebaecd5f86
+
 //replace X by number at the end of api
 //append id to url  
